@@ -1,5 +1,5 @@
 import { onMount } from "solid-js"
-import * as Xterm from "xterm"
+import type * as Xterm from "xterm"
 import "xterm/css/xterm.css"
 
 export const Terminal = (props: {
@@ -8,7 +8,8 @@ export const Terminal = (props: {
 }) => {
 	let div!: HTMLDivElement
 
-	onMount(() => {
+	onMount(async () => {
+		const Xterm = await import("xterm")
 		const terminal = new Xterm.Terminal(props.options)
 
 		terminal.open(div)

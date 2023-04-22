@@ -62,7 +62,6 @@ export default () => {
 
 		<h2>Set Mode</h2>
 		<h3>Insert Mode</h3>
-
 		<p>Insert mode lets insert text between other text instead of overwriting it.</p>
 
 		<Table columns={3}>

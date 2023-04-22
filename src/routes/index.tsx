@@ -25,6 +25,8 @@ export default () => {
 	let textArea!: HTMLTextAreaElement
 
 	return <>
+		<a href="https://github.com/samualtnorman/ansi-docs" target="_blank" rel="noopener noreferrer">Contribute</a>
+
 		<h1>ANSI Escape Code Docs</h1>
 
 		<Table columns={3}>

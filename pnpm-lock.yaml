@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@solidjs/meta':
     specifier: ^0.28.2
@@ -14,8 +18,8 @@ dependencies:
     specifier: ^0.2.26
     version: 0.2.26(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.7.2)(solid-start-node@0.2.19)(vite@4.1.4)
   undici:
-    specifier: ^5.15.1
-    version: 5.15.1
+    specifier: ^5.19.1
+    version: 5.19.1
   xterm:
     specifier: ^5.1.0
     version: 5.1.0
@@ -32,7 +36,7 @@ devDependencies:
     version: 8.4.21
   solid-start-node:
     specifier: ^0.2.19
-    version: 0.2.19(solid-start@0.2.26)(undici@5.15.1)(vite@4.1.4)
+    version: 0.2.19(solid-start@0.2.26)(undici@5.19.1)(vite@4.1.4)
   typescript:
     specifier: ^4.9.4
     version: 4.9.4
@@ -2807,7 +2811,7 @@ packages:
       '@babel/types': 7.21.4
       solid-js: 1.7.2
 
-  /solid-start-node@0.2.19(solid-start@0.2.26)(undici@5.15.1)(vite@4.1.4):
+  /solid-start-node@0.2.19(solid-start@0.2.26)(undici@5.19.1)(vite@4.1.4):
     resolution: {integrity: sha512-5Rtlh4PKm6zDuvFoPzf8xEzz5ca35uoyCeHbEqhcVnD9OqqhW8iKevaoNwlJ3Vm9yZHP53SWcS6F3e/KOnvBpA==}
     peerDependencies:
       solid-start: '*'
@@ -2823,7 +2827,7 @@ packages:
       sirv: 2.0.2
       solid-start: 0.2.26(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.7.2)(solid-start-node@0.2.19)(vite@4.1.4)
       terser: 5.17.1
-      undici: 5.15.1
+      undici: 5.19.1
       vite: 4.1.4(@types/node@18.11.18)
     transitivePeerDependencies:
       - supports-color
@@ -2891,9 +2895,9 @@ packages:
       set-cookie-parser: 2.6.0
       sirv: 2.0.2
       solid-js: 1.7.2
-      solid-start-node: 0.2.19(solid-start@0.2.26)(undici@5.15.1)(vite@4.1.4)
+      solid-start-node: 0.2.19(solid-start@0.2.26)(undici@5.19.1)(vite@4.1.4)
       terser: 5.17.1
-      undici: 5.15.1
+      undici: 5.19.1
       vite: 4.1.4(@types/node@18.11.18)
       vite-plugin-inspect: 0.7.24(rollup@3.20.7)(vite@4.1.4)
       vite-plugin-solid: 2.7.0(solid-js@1.7.2)(vite@4.1.4)
@@ -2990,8 +2994,8 @@ packages:
     hasBin: true
     dev: true
 
-  /undici@5.15.1:
-    resolution: {integrity: sha512-XLk8g0WAngdvFqTI+VKfBtM4YWXgdxkf1WezC771Es0Dd+Pm1KmNx8t93WTC+Hh9tnghmVxkclU1HN+j+CvIUA==}
+  /undici@5.19.1:
+    resolution: {integrity: sha512-YiZ61LPIgY73E7syxCDxxa3LV2yl3sN8spnIuTct60boiiRaE1J8mNWHO8Im2Zi/sFrPusjLlmRPrsyraSqX6A==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0

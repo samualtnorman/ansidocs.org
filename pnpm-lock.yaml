@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@solidjs/meta':
     specifier: ^0.28.2
@@ -14,8 +18,8 @@ dependencies:
     specifier: ^0.2.26
     version: 0.2.26(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.7.2)(solid-start-node@0.2.19)(vite@4.1.4)
   undici:
-    specifier: ^5.15.1
-    version: 5.15.1
+    specifier: ^5.26.2
+    version: 5.26.2
   xterm:
     specifier: ^5.1.0
     version: 5.1.0
@@ -32,7 +36,7 @@ devDependencies:
     version: 8.4.21
   solid-start-node:
     specifier: ^0.2.19
-    version: 0.2.19(solid-start@0.2.26)(undici@5.15.1)(vite@4.1.4)
+    version: 0.2.19(solid-start@0.2.26)(undici@5.26.2)(vite@4.1.4)
   typescript:
     specifier: ^4.9.4
     version: 4.9.4
@@ -1510,6 +1514,10 @@ packages:
     requiresBuild: true
     optional: true
 
+  /@fastify/busboy@2.0.0:
+    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+    engines: {node: '>=14'}
+
   /@hapi/hoek@9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
 
@@ -1837,12 +1845,6 @@ packages:
   /builtin-modules@3.3.0:
     resolution: {integrity: sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==}
     engines: {node: '>=6'}
-
-  /busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
-    dependencies:
-      streamsearch: 1.1.0
 
   /bytes@3.0.0:
     resolution: {integrity: sha512-pMhOfFDPiv9t5jjIXkHosWmkSyQbvsgEVNkz0ERHbuLh2T/7j4Mqqpz523Fe8MVY89KC6Sh/QfS2sM+SjgFDcw==}
@@ -2807,7 +2809,7 @@ packages:
       '@babel/types': 7.21.4
       solid-js: 1.7.2
 
-  /solid-start-node@0.2.19(solid-start@0.2.26)(undici@5.15.1)(vite@4.1.4):
+  /solid-start-node@0.2.19(solid-start@0.2.26)(undici@5.26.2)(vite@4.1.4):
     resolution: {integrity: sha512-5Rtlh4PKm6zDuvFoPzf8xEzz5ca35uoyCeHbEqhcVnD9OqqhW8iKevaoNwlJ3Vm9yZHP53SWcS6F3e/KOnvBpA==}
     peerDependencies:
       solid-start: '*'
@@ -2823,7 +2825,7 @@ packages:
       sirv: 2.0.2
       solid-start: 0.2.26(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.7.2)(solid-start-node@0.2.19)(vite@4.1.4)
       terser: 5.17.1
-      undici: 5.15.1
+      undici: 5.26.2
       vite: 4.1.4(@types/node@18.11.18)
     transitivePeerDependencies:
       - supports-color
@@ -2891,9 +2893,9 @@ packages:
       set-cookie-parser: 2.6.0
       sirv: 2.0.2
       solid-js: 1.7.2
-      solid-start-node: 0.2.19(solid-start@0.2.26)(undici@5.15.1)(vite@4.1.4)
+      solid-start-node: 0.2.19(solid-start@0.2.26)(undici@5.26.2)(vite@4.1.4)
       terser: 5.17.1
-      undici: 5.15.1
+      undici: 5.26.2
       vite: 4.1.4(@types/node@18.11.18)
       vite-plugin-inspect: 0.7.24(rollup@3.20.7)(vite@4.1.4)
       vite-plugin-solid: 2.7.0(solid-js@1.7.2)(vite@4.1.4)
@@ -2922,10 +2924,6 @@ packages:
   /statuses@1.5.0:
     resolution: {integrity: sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==}
     engines: {node: '>= 0.6'}
-
-  /streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
 
   /string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -2990,11 +2988,11 @@ packages:
     hasBin: true
     dev: true
 
-  /undici@5.15.1:
-    resolution: {integrity: sha512-XLk8g0WAngdvFqTI+VKfBtM4YWXgdxkf1WezC771Es0Dd+Pm1KmNx8t93WTC+Hh9tnghmVxkclU1HN+j+CvIUA==}
-    engines: {node: '>=12.18'}
+  /undici@5.26.2:
+    resolution: {integrity: sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==}
+    engines: {node: '>=14.0'}
     dependencies:
-      busboy: 1.6.0
+      '@fastify/busboy': 2.0.0
 
   /unicode-canonical-property-names-ecmascript@2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}

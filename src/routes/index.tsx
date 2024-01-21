@@ -2,10 +2,10 @@ import { JSX, createSignal } from "solid-js"
 import { Terminal } from "~/components/Terminal"
 import Xterm from "xterm"
 
-export const Code = (props: { children: JSX.Element }) =>
+const Code = (props: { children: JSX.Element }) =>
 	<code style={{ "background-color": "#070f4a", "border-radius": ".375rem", padding: "2px 4px" }}>{props.children}</code>
 
-export const Table = (props: { columns: number, children: JSX.Element }) =>
+const Table = (props: { columns: number, children: JSX.Element }) =>
 	<div style={{
 		display: "grid",
 		gap: "0 1rem",

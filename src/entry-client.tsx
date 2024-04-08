@@ -1,3 +1,4 @@
-import { mount, StartClient } from "@solidjs/start/client";
+// @refresh reload
+import { mount, StartClient } from "@solidjs/start/client"
 
-mount(() => <StartClient/>, document.body);
+mount(() => <StartClient/>, document.body)
